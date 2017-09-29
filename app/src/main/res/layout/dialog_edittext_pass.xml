@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/light_gray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<TextView
+    android:id="@+id/title"
+    android:padding="@dimen/h6"
+    android:layout_width="wrap_content"
+    android:text="@string/consult_pass"
+    android:layout_gravity="center_horizontal"
+    android:layout_height="wrap_content" />
+    <include layout="@layout/divider_layout"/>
+    <com.wta.NewCloudApp.jiuwei99986.views.customs.ClearableEditText
+        android:inputType="textPassword"
+        android:hint="@string/pass_word"
+        android:textSize="14sp"
+        android:layout_marginLeft="@dimen/h30"
+        android:layout_marginRight="@dimen/h30"
+        android:layout_marginTop="@dimen/h10"
+        android:padding="@dimen/h6"
+        android:id="@+id/consult_new_pass"
+        android:layout_width="match_parent"
+        android:lines="1"
+        android:maxLength="15"
+        android:background="@drawable/text_style"
+        android:layout_height="wrap_content" />
+    <com.wta.NewCloudApp.jiuwei99986.views.customs.ClearableEditText
+        android:inputType="textPassword"
+        android:layout_marginLeft="@dimen/h30"
+        android:layout_marginRight="@dimen/h30"
+        android:layout_marginTop="@dimen/h10"
+        android:id="@+id/consult_sure_pass"
+        android:layout_width="match_parent"
+        android:lines="1"
+        android:hint="@string/ensure_pass_word"
+        android:textSize="14sp"
+        android:maxLength="15"
+        android:padding="@dimen/h6"
+        android:layout_marginBottom="@dimen/h6"
+        android:background="@drawable/text_style"
+        android:layout_height="wrap_content" />
+    <include layout="@layout/divider_layout"/>
+    <LinearLayout
+        android:layout_marginTop="@dimen/h6"
+        android:gravity="right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/h6"
+            android:text="@string/cancel"
+            android:paddingTop="@dimen/h6"
+            android:paddingBottom="@dimen/h6"
+            android:paddingRight="@dimen/h10"
+            android:paddingLeft="@dimen/h10"
+            android:background="@drawable/login_text_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/btn_sure"
+            android:layout_gravity="right"
+            android:layout_margin="@dimen/h6"
+            android:text="@string/sure"
+            android:paddingTop="@dimen/h6"
+            android:paddingBottom="@dimen/h6"
+            android:paddingRight="@dimen/h10"
+            android:paddingLeft="@dimen/h10"
+            android:background="@drawable/bg_btn_login_selected"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

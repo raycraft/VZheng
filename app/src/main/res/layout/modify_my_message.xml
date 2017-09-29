@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tool_height">
+        <ImageView
+            android:id="@+id/toolbar_back"
+            android:paddingRight="@dimen/h40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="@string/modify_message"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/my_save"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_width="wrap_content"
+            android:textColor="@color/appColor"
+            android:layout_marginRight="10dp"
+            android:text="@string/save"
+            android:layout_gravity="right|center_vertical"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.Toolbar>
+    <include layout="@layout/divider_layout"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/my_modify_head"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <com.wta.NewCloudApp.jiuwei99986.widget.RoundImageView
+                    android:layout_width="60dp"
+                    android:id="@+id/my_head"
+                    android:layout_marginLeft="10dp"
+                   android:src="@mipmap/ic_launcher"
+                    android:layout_height="60dp" />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/h10"
+                    android:text="@string/modify_head"
+                    android:layout_marginRight="20dp"
+                    android:drawableRight="@drawable/go_next_app"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/my_modify_nick"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="@string/modify_nick"
+                    android:textSize="16sp"
+                    android:layout_gravity="center"
+                    android:layout_height="wrap_content" />
+                <EditText
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:id="@+id/my_nick"
+                    android:textSize="16sp"
+                    android:layout_marginLeft="@dimen/h10"
+                    android:maxLength="20"
+                    android:layout_width="match_parent"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:background="@color/light_gray"
+                android:layout_height="2dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

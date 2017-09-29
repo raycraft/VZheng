@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/host_bottom_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+ android:gravity="center"
+    android:orientation="horizontal">
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp" />
+   <!-- <TextView
+        android:id="@+id/anchor_live_page_im"
+        android:layout_marginLeft="10dp"
+        android:text="想说点什么"
+        android:background="@drawable/text_live_back"
+        android:alpha="0.3"
+        android:textSize="16sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp" />-->
+    <!--<View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp" />-->
+    <TextView
+        android:id="@+id/live_page_camera"
+        android:background="@drawable/icon_switch_camera"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/live_page_beauty"
+        android:background="@drawable/icon_beauty_drawable"
+        android:gravity="center"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/live_page_anchor_hide"
+        android:background="@drawable/full_screen"
+        android:layout_width="35dp"
+        android:layout_height="35dp" />
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/live_page_anchor_close"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/close_live" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="40dp" />
+</LinearLayout>

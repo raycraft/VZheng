@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/contain_rel"
+    android:layout_height="match_parent">
+<com.tencent.ilivesdk.view.AVRootView
+    android:id="@+id/av_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" />
+    <TextView
+        android:id="@+id/normal_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/icon_normal"
+        android:onClick="onClick"
+        android:visibility="gone" />
+    <include
+        android:id="@+id/qav_beauty_setting"
+        layout="@layout/qav_beauty_setting"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:layout_marginBottom="20dp" />
+
+    <RelativeLayout
+        android:id="@+id/live_content_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/qav_beauty_setting"
+        android:layout_toEndOf="@+id/qav_beauty_setting">
+    <include android:id="@+id/live_over_page"
+        layout="@layout/live_over_layout"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <include
+        android:id="@+id/head_up_layout"
+        layout="@layout/head_up_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/video_interact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|top"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/icon_video_interact" />
+
+        <ListView
+            android:id="@+id/live_page_im_list"
+            android:layout_width="250dp"
+            android:layout_height="0dp"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="80dp"
+            android:layout_alignParentBottom="true"
+            android:cacheColorHint="#00000000"
+            android:divider="#3c421b1b"
+            android:scrollbarStyle="outsideOverlay"
+            android:stackFromBottom="true"
+            android:transcriptMode="normal" />
+        <include
+            layout="@layout/video_member_bottom_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="15dp" />
+        <include layout="@layout/host_bottom_layout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:id="@+id/live_watch"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+        <include layout="@layout/anchor_bottom_layout"
+            android:layout_width="match_parent"
+            android:id="@+id/live_anchor"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
+    <include
+        android:id="@+id/invite_views"
+        layout="@layout/invite_views"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/normal_btn"
+        android:layout_toEndOf="@+id/normal_btn" />
+</RelativeLayout>

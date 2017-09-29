@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_margin="@dimen/h10"
+    android:layout_height="wrap_content">
+    <com.wta.NewCloudApp.jiuwei99986.widget.RoundImageView
+        android:layout_width="@dimen/h60"
+        android:id="@+id/anchor_head"
+        android:src="@mipmap/ic_launcher"
+        android:layout_height="@dimen/h60" />
+    <TextView
+        android:layout_marginTop="@dimen/h4"
+        android:id="@+id/anchor_nick"
+        android:text="昵称"
+        android:maxLength="15"
+        android:layout_toRightOf="@+id/anchor_head"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_marginTop="@dimen/h6"
+        android:id="@+id/anchor_doctor"
+        android:text=""
+        android:layout_marginLeft="@dimen/h4"
+        android:layout_toRightOf="@+id/anchor_nick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/anchor_title"
+        android:text="昵称"
+        android:layout_alignBottom="@+id/anchor_head"
+        android:layout_marginLeft="@dimen/h4"
+        android:layout_toRightOf="@+id/anchor_head"
+        android:layout_width="wrap_content"
+        android:layout_marginBottom="@dimen/h4"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/share"
+        android:textSize="12sp"
+        android:padding="@dimen/h4"
+        android:background="@drawable/text_style"
+        android:layout_margin="@dimen/h6"
+        android:layout_width="wrap_content"
+        android:text="@string/share"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.wta.NewCloudApp.jiuwei99986.widget.ConstrainImage
+            android:layout_width="match_parent"
+            android:id="@+id/consult_image"
+            app:scaleNumber="1"
+            android:layout_height="wrap_content"></com.wta.NewCloudApp.jiuwei99986.widget.ConstrainImage>
+        <TextView
+            android:text="@string/consult_ing"
+            android:layout_margin="@dimen/h10"
+            android:layout_width="wrap_content"
+            android:id="@+id/consult_state"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="@string/consult_ing"
+            android:layout_margin="@dimen/h10"
+            android:layout_width="wrap_content"
+            android:id="@+id/consult_time"
+            android:layout_gravity="right"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

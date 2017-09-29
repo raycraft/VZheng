@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_layout" />
+    <LinearLayout
+        android:id="@+id/introduce"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/h10"
+        android:paddingRight="@dimen/h10">
+        <TextView
+            android:gravity="center"
+            android:drawablePadding="@dimen/h2"
+            android:drawableLeft="@drawable/introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/consult_introduce" />
+        <TextView
+            android:layout_marginLeft="@dimen/h10"
+            android:gravity="right"
+            android:maxLength="20"
+            android:drawablePadding="@dimen/h2"
+            android:id="@+id/consult_introduce"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/go_next_app" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout" />
+
+    <LinearLayout
+        android:id="@+id/cover"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/h10"
+        android:paddingRight="@dimen/h10">
+        <TextView
+            android:gravity="center"
+            android:drawablePadding="@dimen/h2"
+            android:drawableLeft="@drawable/image_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="@string/consult_cover" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/go_next_app" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout" />
+    <FrameLayout
+        android:id="@+id/cover_contain"
+        android:layout_width="@dimen/h70"
+        android:layout_margin="@dimen/h6"
+        android:layout_height="@dimen/h70">
+        <ImageView
+            android:layout_width="@dimen/h70"
+            android:id="@+id/consult_cover"
+            android:src="@drawable/add_image"
+            android:layout_height="@dimen/h70" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/pass"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/h10"
+        android:paddingRight="@dimen/h10">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:drawablePadding="@dimen/h2"
+            android:drawableLeft="@drawable/door"
+            android:text="@string/consult_pass" />
+
+        <TextView
+            android:id="@+id/consult_pass"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableRight="@drawable/go_next_app" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout" />
+
+    <LinearLayout
+        android:id="@+id/agree"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h50"
+        android:layout_marginTop="1px"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/h10"
+        android:paddingRight="@dimen/h10">
+
+        <TextView
+            android:id="@+id/is_agree"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+            android:text="@string/consult_agree" />
+
+        <android.support.v7.widget.SwitchCompat
+            android:layout_width="wrap_content"
+            android:textOn="是"
+            android:textOff="否"
+            app:showText="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <include layout="@layout/divider_layout" />
+</LinearLayout>

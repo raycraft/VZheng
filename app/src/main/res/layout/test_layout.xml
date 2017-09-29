@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+    <FrameLayout
+        android:id="@+id/fragment_contain"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/common_tab"
+        ></FrameLayout>
+        <com.wta.NewCloudApp.jiuwei99986.custom.CommonTabLayout
+            android:id="@+id/common_tab"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/h40"
+            android:background="@color/white"
+            tl:tl_iconHeight="22dp"
+            tl:tl_iconWidth="22dp"
+            tl:tl_indicator_height="0dp"
+            tl:tl_textSelectColor="@color/appColor"
+            tl:tl_textUnselectColor="@color/textUnSelectColor"
+            tl:tl_textsize="10sp"
+            ></com.wta.NewCloudApp.jiuwei99986.custom.CommonTabLayout>
+        <ImageView
+            android:id="@+id/add"
+            android:layout_alignParentBottom="true"
+            android:layout_width="@dimen/h44"
+            android:layout_height="@dimen/h44"
+            android:layout_centerHorizontal="true"
+            android:src="@mipmap/add_launcher" />
+</RelativeLayout>

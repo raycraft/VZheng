@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/h40"
+        android:background="@color/white"
+        app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:titleTextColor="@color/white">
+        <ImageView
+            android:id="@+id/toolbar_back"
+            android:src="@drawable/back"
+            android:paddingRight="@dimen/h24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/say_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/h10"
+            android:text="@string/say"
+            android:textColor="@color/appColor" />
+        <TextView
+            android:id="@+id/say_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/h10"
+            android:text="@string/say_publish"
+            android:textColor="@color/gray" />
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/find_editText_publish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/edit_text_back"
+            android:gravity="left"
+            android:hint="@string/hint_message"
+            android:lines="5"
+            android:padding="10dp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/photo_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"></android.support.v7.widget.RecyclerView>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/public_linear"
+            android:layout_margin="@dimen/h10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:checked="true"
+                android:id="@+id/ask_public"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ask_public" />
+
+            <RadioButton
+                android:id="@+id/ask_private"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ask_private" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/h10"
+            android:text="@string/say_tag" />
+
+        <com.wta.NewCloudApp.jiuwei99986.custom.FlowTagLayout
+            android:id="@+id/flow_tag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/h10"></com.wta.NewCloudApp.jiuwei99986.custom.FlowTagLayout>
+    </LinearLayout>
+
+</LinearLayout>
